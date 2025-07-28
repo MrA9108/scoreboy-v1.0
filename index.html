@@ -146,7 +146,7 @@
   <div class="container hidden" id="menuPage">
     <div class="page-title">Welcome to Scoreboy Lite</div>
     <button onclick="selectPage(1)">Scoreboy Lite</button>
-    <button disabled>Team Score (Coming Soon)</button>
+    <button onclick="selectPage(2)">Scoreboy Team</button>
     <button disabled>Scoreboy Suite (Coming Soon)</button>
     <button onclick="resetSession()" style="background:#e53935; margin-top:20px;">Reset Session</button>
   </div>
@@ -189,6 +189,22 @@
 
     <button onclick="startMatch()">Start Match</button>
   </div>
+  
+  <!-- Team Score Setup Page -->
+  <div class="container hidden" id="setupPage2">
+    <div class="page-title">Team Score Setup</div>
+
+    <label for="teamScorePlayers">No of players:</label>
+    <select id="teamScorePlayers" onchange="generatePlayerInputs2()">
+      <option value="3">03</option>
+      <option value="4">04</option>
+      <option value="5">05</option>
+      <option value="6">06</option>
+      <option value="7">07</option>
+      <option value="8">08</option>
+      <option value="9">09</option>
+      <option value="10"
+
 
   <!-- Score Page -->
   <div class="container hidden" id="scorePage">
